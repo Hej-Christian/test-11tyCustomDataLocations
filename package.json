@@ -1,0 +1,17 @@
+{
+  "name": "test-11tycustomdatalocations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx eleventy --serve --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "csv-parse": "^6.1.0"
+  }
+}

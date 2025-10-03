@@ -1,0 +1,22 @@
+<h2>Global Data File ✅</h2>
+<ul>
+{% for entry in faunaGlobal %}
+  <li>{{entry.name}}</li>
+{% endfor %}
+</ul>
+<p>{{faunaGlobal | length}} entries from the .csv located in <code>/_src/_data/</code>, as expected</p>
+
+<hr>
+
+<h2>Local/Directory Data File 🚫</h2>
+<ul>
+{% for entry in faunaLocal %}
+  <li>{{entry.name}}</li>
+{% endfor %}
+</ul>
+<p>{{faunaLocal | length}} entries from the .csv located in  <code>/_src/</code></p>
+
+<hr>
+
+<p>The custom data file format (.csv) works while in the <code>/_data</code> directory, but not as a local data file, which as I understand, should work?</p>
+<a href="https://www.11ty.dev/docs/data-custom/">11ty Docs</a> | <a href="https://github.com/11ty/eleventy/issues/3888#issue-3221888897">Issue Raised on GitHub</a>
