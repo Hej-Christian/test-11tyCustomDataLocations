@@ -23,7 +23,7 @@ instead of my old version:
 return records;
 ```
 
-And with this change, we can now access the data with `{{ myCsvData }}`. This works for local data files perfectly. And if we still want to have some global data .csv, we can access that with `<filename>.myCsvData`. 
+And with this change, we can now access the data with `{{ myCsvData }}`. This works for local data files perfectly. And if we still want to have some global data .csv, we can access that with `{{ <filename>.myCsvData {{` 
 
 **Also,** be sure the local data file matches the filename for the directory it's in! 
 A mistake I made during the demo 😅 
